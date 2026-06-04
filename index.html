@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ORESTE — Dampak Internet pada Kesehatan Mental Remaja</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --peach-light: #FFE5D9;
+      --peach-medium: #FFCBA4;
+      --peach-dark: #FF8C69;
+      --peach-deep: #E8735A;
+      --bg: #FFF7F4;
+      --white: #FFFFFF;
+      --text-dark: #3A1F1A;
+      --text-mid: #7D4E47;
+      --text-soft: #B07A6E;
+      --shadow-sm: 0 4px 16px rgba(232,115,90,0.12);
+      --shadow-md: 0 12px 32px rgba(232,115,90,0.18);
+      --shadow-lg: 0 24px 56px rgba(232,115,90,0.22);
+      --radius: 20px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* ── NAVBAR ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,247,244,0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(232,115,90,0.12);
+      padding: 1rem 0;
+    }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto; padding: 0 1.5rem;
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    }
+    .brand {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.3rem; font-weight: 800;
+      background: linear-gradient(135deg, var(--peach-dark), var(--peach-deep));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .nav-links { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .nav-link {
+      font-size: 0.85rem; font-weight: 600; color: var(--text-mid);
+      padding: 0.4rem 0.9rem; border-radius: 999px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .nav-link:hover { background: var(--peach-light); color: var(--peach-deep); }
+    .nav-btn {
+      background: linear-gradient(135deg, var(--peach-dark), var(--peach-deep));
+      color: var(--white) !important; box-shadow: var(--shadow-sm);
+    }
+    .nav-btn:hover { opacity: 0.9; background: linear-gradient(135deg, var(--peach-dark), var(--peach-deep)) !important; }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 92vh;
+      background: linear-gradient(145deg, #FFB347 0%, #FF8C69 45%, #E8735A 100%);
+      display: flex; align-items: center; justify-content: center;
+      text-align: center; padding: 5rem 1.5rem;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 30% 60%, rgba(255,255,255,0.12) 0%, transparent 60%),
+                  radial-gradient(ellipse at 75% 20%, rgba(255,255,255,0.08) 0%, transparent 50%);
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.35);
+      padding: 0.4rem 1rem; border-radius: 999px;
+      color: var(--white); font-size: 0.8rem; font-weight: 600;
+      margin-bottom: 1.5rem; letter-spacing: 0.05em; text-transform: uppercase;
+    }
+    .hero h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2.2rem, 5.5vw, 4.2rem);
+      font-weight: 800; line-height: 1.1;
+      color: var(--white); max-width: 820px; margin: 0 auto;
+    }
+    .hero h1 em { font-style: normal; opacity: 0.75; }
+    .hero p {
+      max-width: 600px; margin: 1.5rem auto 2.5rem;
+      color: rgba(255,255,255,0.88); font-size: 1.05rem; line-height: 1.75;
+    }
+    .hero-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.85rem 1.8rem; border-radius: 999px;
+      background: var(--white); color: var(--peach-deep);
+      font-weight: 700; font-size: 0.95rem;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 18px 36px rgba(0,0,0,0.16); }
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.85rem 1.8rem; border-radius: 999px;
+      border: 2px solid rgba(255,255,255,0.55);
+      color: var(--white); font-weight: 600; font-size: 0.95rem;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .btn-outline:hover { background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.8); }
+
+    /* ── SECTION ── */
+    .section { padding: 5rem 1.5rem; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-label {
+      display: inline-block;
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--peach-deep);
+      background: var(--peach-light); padding: 0.35rem 0.85rem; border-radius: 999px;
+      margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 800;
+      color: var(--text-dark); line-height: 1.15;
+    }
+    .section-sub {
+      margin-top: 0.75rem; color: var(--text-mid);
+      font-size: 1rem; line-height: 1.7; max-width: 580px;
+    }
+    .section-head { margin-bottom: 3rem; }
+    .section-head.center { text-align: center; }
+    .section-head.center .section-sub { margin: 0.75rem auto 0; }
+
+    /* ── STATS ── */
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;
+      margin-bottom: 5rem;
+    }
+    .stat-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 1.8rem; box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(232,115,90,0.08);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .stat-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .stat-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 2.8rem; font-weight: 800;
+      background: linear-gradient(135deg, var(--peach-dark), var(--peach-deep));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      line-height: 1;
+    }
+    .stat-label { margin-top: 0.5rem; color: var(--text-mid); font-size: 0.9rem; font-weight: 500; }
+
+    /* ── CRITERIA ── */
+    .criteria-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem;
+    }
+    .criteria-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 1.5rem 1.7rem; box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(232,115,90,0.08);
+      display: flex; gap: 1.2rem; align-items: flex-start;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .criteria-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+    .criteria-tag {
+      flex-shrink: 0; width: 48px; height: 48px;
+      background: linear-gradient(135deg, var(--peach-medium), var(--peach-dark));
+      border-radius: 14px; display: grid; place-items: center;
+      font-family: 'Syne', sans-serif; font-weight: 800; font-size: 0.95rem; color: var(--white);
+    }
+    .criteria-name { font-weight: 600; font-size: 0.95rem; color: var(--text-dark); }
+    .criteria-desc { font-size: 0.85rem; color: var(--text-mid); margin-top: 0.3rem; line-height: 1.5; }
+    .criteria-weight {
+      display: inline-block; margin-top: 0.6rem;
+      font-size: 0.78rem; font-weight: 700; color: var(--peach-deep);
+      background: var(--peach-light); padding: 0.2rem 0.6rem; border-radius: 999px;
+    }
+
+    /* ── PODIUM ── */
+    .podium-section { background: linear-gradient(160deg, #FFF1EB 0%, var(--bg) 100%); }
+    .podium-wrap {
+      display: grid; grid-template-columns: 1fr 1.15fr 1fr;
+      gap: 1.2rem; align-items: end; max-width: 680px; margin: 0 auto 3rem;
+    }
+    .podium-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 1.8rem 1.2rem; text-align: center;
+      box-shadow: var(--shadow-md);
+      transition: transform 0.25s;
+    }
+    .podium-card:hover { transform: translateY(-4px); }
+    .podium-1 { border-top: 4px solid #FFD700; }
+    .podium-2 { border-top: 4px solid #C0C0C0; }
+    .podium-3 { border-top: 4px solid #CD7F32; }
+    .podium-medal { font-size: 2.2rem; margin-bottom: 0.5rem; }
+    .podium-name { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1rem; }
+    .podium-score { color: var(--text-mid); font-size: 0.85rem; margin-top: 0.3rem; }
+    .podium-keterangan {
+      display: inline-block; margin-top: 0.6rem;
+      font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.7rem; border-radius: 999px;
+    }
+    .keterangan-berat { background: #FFE0DC; color: #C0392B; }
+
+    /* ── TABLE ── */
+    .table-wrap {
+      background: var(--white); border-radius: var(--radius);
+      box-shadow: var(--shadow-sm); overflow: hidden;
+    }
+    .table-scroll { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th {
+      background: linear-gradient(90deg, #FFB347, var(--peach-dark));
+      color: var(--white); font-weight: 600; font-size: 0.82rem;
+      padding: 0.9rem 1rem; text-align: left; white-space: nowrap;
+    }
+    td { padding: 0.8rem 1rem; border-bottom: 1px solid rgba(232,115,90,0.08); }
+    tbody tr:nth-child(even) { background: #FFF7F4; }
+    tbody tr:hover { background: rgba(255,140,105,0.06); }
+    .rank-badge {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 28px; height: 28px; border-radius: 50%;
+      font-weight: 700; font-size: 0.8rem;
+    }
+    .rank-1 { background: #FFD700; color: #5a3e00; }
+    .rank-2 { background: #C0C0C0; color: #333; }
+    .rank-3 { background: #CD7F32; color: var(--white); }
+    .rank-default { background: var(--peach-light); color: var(--peach-deep); }
+    .keterangan-badge {
+      font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.6rem; border-radius: 999px;
+    }
+    .badge-berat { background: #FFE0DC; color: #C0392B; }
+    .badge-ringan { background: #D6F5E3; color: #1a7a40; }
+
+    /* ── METHODS ── */
+    .methods-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.2rem;
+    }
+    .method-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 1.8rem; box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(232,115,90,0.08);
+    }
+    .method-step {
+      font-size: 0.75rem; font-weight: 700; color: var(--peach-deep);
+      background: var(--peach-light); display: inline-block;
+      padding: 0.25rem 0.7rem; border-radius: 999px; margin-bottom: 0.75rem;
+    }
+    .method-card h3 { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 800; }
+    .method-card p { color: var(--text-mid); font-size: 0.88rem; line-height: 1.6; margin-top: 0.5rem; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: linear-gradient(135deg, #3A1F1A, #5C2E26);
+      color: rgba(255,255,255,0.7); padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    footer .brand { font-size: 1.6rem; -webkit-text-fill-color: var(--peach-medium); margin-bottom: 0.5rem; }
+    footer p { font-size: 0.88rem; line-height: 1.7; }
+    footer a { color: var(--peach-medium); font-weight: 600; }
+
+    /* ── FLOAT SCROLL ── */
+    .scroll-up {
+      position: fixed; bottom: 2rem; right: 2rem; z-index: 99;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--peach-dark), var(--peach-deep));
+      color: var(--white); border: none; cursor: pointer;
+      box-shadow: var(--shadow-md); font-size: 1.2rem;
+      display: none; align-items: center; justify-content: center;
+      transition: transform 0.2s;
+    }
+    .scroll-up:hover { transform: translateY(-2px); }
+    .scroll-up.show { display: flex; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .podium-wrap { grid-template-columns: 1fr; max-width: 320px; }
+      .podium-1, .podium-2, .podium-3 { border-top-width: 3px; }
+      .nav-links { display: none; }
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero > * { animation: fadeUp 0.7s ease both; }
+    .hero-badge { animation-delay: 0.1s; }
+    .hero h1    { animation-delay: 0.25s; }
+    .hero p     { animation-delay: 0.4s; }
+    .hero-actions { animation-delay: 0.55s; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-inner">
+    <span class="brand">ORESTE</span>
+    <div class="nav-links">
+      <a href="#kriteria" class="nav-link">Kriteria</a>
+      <a href="#ranking" class="nav-link">Ranking</a>
+      <a href="#metode" class="nav-link">Metode</a>
+      <a href="https://github.com/Nebyama/basis-data" target="_blank" class="nav-link nav-btn">GitHub ↗</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div style="position:relative; z-index:1;">
+    <div class="hero-badge">📊 Studi Kasus Basis Data · Metode ORESTE</div>
+    <h1>Di Balik Layar:<br/><em>Dampak Internet Intensif</em><br/>pada Kesehatan Mental Remaja</h1>
+    <p>Analisis multi-kriteria ORESTE terhadap 40 remaja, mencakup Besson Rank, normalisasi, distance score, dan perankingan akhir berdasarkan 5 kriteria terbobot.</p>
+    <div class="hero-actions">
+      <a href="#ranking" class="btn-primary">📋 Lihat Ranking</a>
+      <a href="https://github.com/Nebyama/basis-data" target="_blank" class="btn-outline">⭐ Lihat Source Code</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS + KRITERIA -->
+<section class="section" id="kriteria">
+  <div class="container">
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-num">40</div>
+        <div class="stat-label">Alternatif (Remaja 1–40)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">5</div>
+        <div class="stat-label">Kriteria Penilaian</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">ORESTE</div>
+        <div class="stat-label">Metode Analisis</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">PHP</div>
+        <div class="stat-label">MySQL · JSON · Python</div>
+      </div>
+    </div>
+
+    <div class="section-head">
+      <span class="section-label">Bobot Kriteria</span>
+      <h2 class="section-title">5 Aspek yang Dinilai</h2>
+      <p class="section-sub">Setiap kriteria diberi bobot sesuai tingkat pengaruhnya terhadap kesehatan mental remaja.</p>
+    </div>
+
+    <div class="criteria-grid">
+      <div class="criteria-card">
+        <div class="criteria-tag">C1</div>
+        <div>
+          <div class="criteria-name">Durasi Penggunaan Internet</div>
+          <div class="criteria-desc">Intensitas waktu yang dihabiskan remaja di dunia digital setiap hari.</div>
+          <span class="criteria-weight">Bobot 0.30 · Rank 1</span>
+        </div>
+      </div>
+      <div class="criteria-card">
+        <div class="criteria-tag">C2</div>
+        <div>
+          <div class="criteria-name">Kondisi Mental</div>
+          <div class="criteria-desc">Status psikologis dan kesejahteraan emosional setiap responden.</div>
+          <span class="criteria-weight">Bobot 0.25 · Rank 2</span>
+        </div>
+      </div>
+      <div class="criteria-card">
+        <div class="criteria-tag">C3</div>
+        <div>
+          <div class="criteria-name">Kualitas Tidur</div>
+          <div class="criteria-desc">Pengaruh interaksi internet terhadap pola dan kualitas tidur remaja.</div>
+          <span class="criteria-weight">Bobot 0.20 · Rank 3</span>
+        </div>
+      </div>
+      <div class="criteria-card">
+        <div class="criteria-tag">C4</div>
+        <div>
+          <div class="criteria-name">Interaksi Sosial</div>
+          <div class="criteria-desc">Dampak penggunaan internet pada hubungan sosial dan komunikasi.</div>
+          <span class="criteria-weight">Bobot 0.15 · Rank 4</span>
+        </div>
+      </div>
+      <div class="criteria-card">
+        <div class="criteria-tag">C5</div>
+        <div>
+          <div class="criteria-name">Kesadaran Diri</div>
+          <div class="criteria-desc">Seberapa sadar remaja terhadap perilaku dan konsekuensi digitalnya.</div>
+          <span class="criteria-weight">Bobot 0.10 · Rank 5</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PODIUM + RANKING -->
+<section class="section podium-section" id="ranking">
+  <div class="container">
+    <div class="section-head center">
+      <span class="section-label">Hasil Akhir</span>
+      <h2 class="section-title">Perankingan ORESTE</h2>
+      <p class="section-sub">Semakin kecil akumulasi distance score, semakin berat dampak penggunaan internet terhadap kesehatan mental remaja tersebut.</p>
+    </div>
+
+    <!-- PODIUM TOP 3 -->
+    <div class="podium-wrap">
+      <!-- Rank 2 -->
+      <div class="podium-card podium-2">
+        <div class="podium-medal">🥈</div>
+        <div class="podium-name">Remaja 13</div>
+        <div class="podium-score">Skor: 111.593</div>
+      </div>
+      <!-- Rank 1 -->
+      <div class="podium-card podium-1">
+        <div class="podium-medal">🥇</div>
+        <div class="podium-name">Remaja 34</div>
+        <div class="podium-score">Skor: 102.594</div>
+        <div><span class="podium-keterangan keterangan-berat">Dampak Paling Berat</span></div>
+      </div>
+      <!-- Rank 3 -->
+      <div class="podium-card podium-3">
+        <div class="podium-medal">🥉</div>
+        <div class="podium-name">Remaja 19</div>
+        <div class="podium-score">Skor: 119.378</div>
+      </div>
+    </div>
+
+    <!-- FULL TABLE -->
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Nama</th>
+              <th>Akumulasi Score</th>
+              <th>Keterangan</th>
+            </tr>
+          </thead>
+          <tbody id="rankingTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- METODE -->
+<section class="section" id="metode">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label">Alur Perhitungan</span>
+      <h2 class="section-title">Tahapan Metode ORESTE</h2>
+      <p class="section-sub">Metode ORESTE (Organísation, Rangement Et Synthèse de données rElationnelles) mengikuti alur berikut.</p>
+    </div>
+    <div class="methods-grid">
+      <div class="method-card">
+        <span class="method-step">Step 1</span>
+        <h3>Input Data Alternatif</h3>
+        <p>Data 40 remaja diinput dengan nilai untuk masing-masing 5 kriteria (C1–C5).</p>
+      </div>
+      <div class="method-card">
+        <span class="method-step">Step 2</span>
+        <h3>Penetapan Bobot</h3>
+        <p>Setiap kriteria diberi bobot prioritas: C1=0.30, C2=0.25, C3=0.20, C4=0.15, C5=0.10.</p>
+      </div>
+      <div class="method-card">
+        <span class="method-step">Step 3</span>
+        <h3>Besson Rank</h3>
+        <p>Nilai setiap alternatif pada tiap kriteria diubah menjadi ranking menggunakan metode Besson (rata-rata rank untuk nilai yang sama).</p>
+      </div>
+      <div class="method-card">
+        <span class="method-step">Step 4</span>
+        <h3>Normalisasi</h3>
+        <p>Besson Rank dinormalisasi agar kriteria dengan skala berbeda bisa dibandingkan secara adil.</p>
+      </div>
+      <div class="method-card">
+        <span class="method-step">Step 5</span>
+        <h3>Distance Score</h3>
+        <p>Dihitung jarak tiap alternatif dari titik ideal menggunakan formula pembobotan ORESTE.</p>
+      </div>
+      <div class="method-card">
+        <span class="method-step">Step 6</span>
+        <h3>Perankingan Akhir</h3>
+        <p>Akumulasi distance score diurutkan — skor terkecil = dampak paling berat terhadap kesehatan mental.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="brand">ORESTE</div>
+  <p style="margin-top:0.5rem;">Tugas Basis Data · Teknik Informatika</p>
+  <p style="margin-top:1rem;">
+    Source code tersedia di
+    <a href="https://github.com/Nebyama/basis-data" target="_blank">github.com/Nebyama/basis-data</a>
+  </p>
+  <p style="margin-top:0.5rem; font-size:0.8rem; opacity:0.5;">
+    ⚠️ Web app interaktif (PHP/MySQL) memerlukan server — tidak dapat dijalankan langsung di GitHub Pages.
+  </p>
+</footer>
+
+<!-- SCROLL UP -->
+<button class="scroll-up" id="scrollUp" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+  // Ranking data
+  const rankings = [
+    {r:1,  name:'Remaja 34', score:102.594, ket:'Dampak Paling Berat'},
+    {r:2,  name:'Remaja 13', score:111.593, ket:null},
+    {r:3,  name:'Remaja 19', score:119.378, ket:null},
+    {r:4,  name:'Remaja 6',  score:122.566, ket:null},
+    {r:5,  name:'Remaja 22', score:140.975, ket:null},
+    {r:6,  name:'Remaja 21', score:141.714, ket:null},
+    {r:7,  name:'Remaja 3',  score:142.627, ket:null},
+    {r:8,  name:'Remaja 38', score:144.427, ket:null},
+    {r:9,  name:'Remaja 28', score:149.791, ket:null},
+    {r:10, name:'Remaja 32', score:150.720, ket:null},
+    {r:11, name:'Remaja 27', score:162.572, ket:null},
+    {r:12, name:'Remaja 15', score:162.767, ket:null},
+    {r:13, name:'Remaja 31', score:163.701, ket:null},
+    {r:14, name:'Remaja 7',  score:167.276, ket:null},
+    {r:15, name:'Remaja 37', score:171.357, ket:null},
+    {r:16, name:'Remaja 17', score:172.203, ket:null},
+    {r:17, name:'Remaja 33', score:172.577, ket:null},
+    {r:18, name:'Remaja 11', score:175.005, ket:null},
+    {r:19, name:'Remaja 39', score:175.038, ket:null},
+    {r:20, name:'Remaja 8',  score:175.952, ket:null},
+    {r:21, name:'Remaja 25', score:176.127, ket:null},
+    {r:22, name:'Remaja 14', score:178.254, ket:null},
+    {r:23, name:'Remaja 40', score:182.091, ket:null},
+    {r:24, name:'Remaja 18', score:182.612, ket:null},
+    {r:25, name:'Remaja 5',  score:183.376, ket:null},
+    {r:26, name:'Remaja 36', score:183.794, ket:null},
+    {r:27, name:'Remaja 35', score:187.625, ket:null},
+    {r:28, name:'Remaja 24', score:192.330, ket:null},
+    {r:29, name:'Remaja 1',  score:196.494, ket:null},
+    {r:30, name:'Remaja 20', score:203.706, ket:null},
+    {r:31, name:'Remaja 26', score:206.067, ket:null},
+    {r:32, name:'Remaja 10', score:210.363, ket:null},
+    {r:33, name:'Remaja 12', score:210.465, ket:null},
+    {r:34, name:'Remaja 2',  score:216.180, ket:null},
+    {r:35, name:'Remaja 9',  score:226.868, ket:null},
+    {r:36, name:'Remaja 29', score:232.364, ket:null},
+    {r:37, name:'Remaja 30', score:246.078, ket:null},
+    {r:38, name:'Remaja 16', score:249.565, ket:null},
+    {r:39, name:'Remaja 23', score:260.082, ket:null},
+    {r:40, name:'Remaja 4',  score:307.191, ket:'Dampak Paling Ringan'},
+  ];
+
+  const tbody = document.getElementById('rankingTable');
+  rankings.forEach(({r, name, score, ket}) => {
+    let rankBadge = '';
+    if (r === 1) rankBadge = `<span class="rank-badge rank-1">1</span>`;
+    else if (r === 2) rankBadge = `<span class="rank-badge rank-2">2</span>`;
+    else if (r === 3) rankBadge = `<span class="rank-badge rank-3">3</span>`;
+    else rankBadge = `<span class="rank-badge rank-default">${r}</span>`;
+
+    let ketHtml = '—';
+    if (ket === 'Dampak Paling Berat') ketHtml = `<span class="keterangan-badge badge-berat">Dampak Paling Berat</span>`;
+    if (ket === 'Dampak Paling Ringan') ketHtml = `<span class="keterangan-badge badge-ringan">Dampak Paling Ringan</span>`;
+
+    tbody.innerHTML += `
+      <tr>
+        <td>${rankBadge}</td>
+        <td style="font-weight:600;">${name}</td>
+        <td style="font-variant-numeric:tabular-nums;">${score.toFixed(3)}</td>
+        <td>${ketHtml}</td>
+      </tr>`;
+  });
+
+  // Scroll up button
+  const btn = document.getElementById('scrollUp');
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('show', window.scrollY > 400);
+  });
+</script>
+</body>
+</html>
