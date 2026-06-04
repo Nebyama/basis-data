@@ -1,0 +1,2484 @@
+{
+  "bobot": [
+    {
+      "no": 1,
+      "nama": "Durasi Penggunaan Internet (C1)",
+      "bobot": 0.3,
+      "rank_bobot": 1
+    },
+    {
+      "no": 2,
+      "nama": "Kondisi Mental (C2)",
+      "bobot": 0.25,
+      "rank_bobot": 2
+    },
+    {
+      "no": 3,
+      "nama": "Kualitas Tidur (C3)",
+      "bobot": 0.2,
+      "rank_bobot": 3
+    },
+    {
+      "no": 4,
+      "nama": "Interaksi Sosial (C4)",
+      "bobot": 0.15,
+      "rank_bobot": 4
+    },
+    {
+      "no": 5,
+      "nama": "Kesadaran Diri (C5)",
+      "bobot": 0.1,
+      "rank_bobot": 5
+    }
+  ],
+  "alternatif": [
+    {
+      "no": 1,
+      "nama": "Remaja 1",
+      "c1": 95,
+      "c2": 57,
+      "c3": 46,
+      "c4": 87,
+      "c5": 47
+    },
+    {
+      "no": 2,
+      "nama": "Remaja 2",
+      "c1": 70,
+      "c2": 64,
+      "c3": 53,
+      "c4": 87,
+      "c5": 36
+    },
+    {
+      "no": 3,
+      "nama": "Remaja 3",
+      "c1": 98,
+      "c2": 84,
+      "c3": 50,
+      "c4": 77,
+      "c5": 57
+    },
+    {
+      "no": 4,
+      "nama": "Remaja 4",
+      "c1": 57,
+      "c2": 51,
+      "c3": 50,
+      "c4": 53,
+      "c5": 44
+    },
+    {
+      "no": 5,
+      "nama": "Remaja 5",
+      "c1": 87,
+      "c2": 88,
+      "c3": 46,
+      "c4": 75,
+      "c5": 42
+    },
+    {
+      "no": 6,
+      "nama": "Remaja 6",
+      "c1": 96,
+      "c2": 94,
+      "c3": 79,
+      "c4": 66,
+      "c5": 44
+    },
+    {
+      "no": 7,
+      "nama": "Remaja 7",
+      "c1": 83,
+      "c2": 87,
+      "c3": 62,
+      "c4": 40,
+      "c5": 78
+    },
+    {
+      "no": 8,
+      "nama": "Remaja 8",
+      "c1": 65,
+      "c2": 94,
+      "c3": 72,
+      "c4": 61,
+      "c5": 47
+    },
+    {
+      "no": 9,
+      "nama": "Remaja 9",
+      "c1": 64,
+      "c2": 63,
+      "c3": 93,
+      "c4": 61,
+      "c5": 36
+    },
+    {
+      "no": 10,
+      "nama": "Remaja 10",
+      "c1": 60,
+      "c2": 74,
+      "c3": 51,
+      "c4": 62,
+      "c5": 84
+    },
+    {
+      "no": 11,
+      "nama": "Remaja 11",
+      "c1": 77,
+      "c2": 88,
+      "c3": 61,
+      "c4": 42,
+      "c5": 76
+    },
+    {
+      "no": 12,
+      "nama": "Remaja 12",
+      "c1": 84,
+      "c2": 84,
+      "c3": 52,
+      "c4": 64,
+      "c5": 35
+    },
+    {
+      "no": 13,
+      "nama": "Remaja 13",
+      "c1": 90,
+      "c2": 68,
+      "c3": 85,
+      "c4": 79,
+      "c5": 85
+    },
+    {
+      "no": 14,
+      "nama": "Remaja 14",
+      "c1": 78,
+      "c2": 86,
+      "c3": 57,
+      "c4": 85,
+      "c5": 34
+    },
+    {
+      "no": 15,
+      "nama": "Remaja 15",
+      "c1": 57,
+      "c2": 92,
+      "c3": 59,
+      "c4": 89,
+      "c5": 48
+    },
+    {
+      "no": 16,
+      "nama": "Remaja 16",
+      "c1": 60,
+      "c2": 64,
+      "c3": 51,
+      "c4": 64,
+      "c5": 47
+    },
+    {
+      "no": 17,
+      "nama": "Remaja 17",
+      "c1": 84,
+      "c2": 90,
+      "c3": 68,
+      "c4": 50,
+      "c5": 53
+    },
+    {
+      "no": 18,
+      "nama": "Remaja 18",
+      "c1": 77,
+      "c2": 63,
+      "c3": 87,
+      "c4": 57,
+      "c5": 74
+    },
+    {
+      "no": 19,
+      "nama": "Remaja 19",
+      "c1": 98,
+      "c2": 91,
+      "c3": 49,
+      "c4": 78,
+      "c5": 70
+    },
+    {
+      "no": 20,
+      "nama": "Remaja 20",
+      "c1": 65,
+      "c2": 84,
+      "c3": 91,
+      "c4": 55,
+      "c5": 40
+    },
+    {
+      "no": 21,
+      "nama": "Remaja 21",
+      "c1": 84,
+      "c2": 74,
+      "c3": 62,
+      "c4": 80,
+      "c5": 74
+    },
+    {
+      "no": 22,
+      "nama": "Remaja 22",
+      "c1": 90,
+      "c2": 64,
+      "c3": 88,
+      "c4": 60,
+      "c5": 83
+    },
+    {
+      "no": 23,
+      "nama": "Remaja 23",
+      "c1": 58,
+      "c2": 64,
+      "c3": 47,
+      "c4": 60,
+      "c5": 55
+    },
+    {
+      "no": 24,
+      "nama": "Remaja 24",
+      "c1": 72,
+      "c2": 54,
+      "c3": 58,
+      "c4": 76,
+      "c5": 75
+    },
+    {
+      "no": 25,
+      "nama": "Remaja 25",
+      "c1": 75,
+      "c2": 63,
+      "c3": 86,
+      "c4": 71,
+      "c5": 55
+    },
+    {
+      "no": 26,
+      "nama": "Remaja 26",
+      "c1": 96,
+      "c2": 79,
+      "c3": 54,
+      "c4": 56,
+      "c5": 38
+    },
+    {
+      "no": 27,
+      "nama": "Remaja 27",
+      "c1": 70,
+      "c2": 85,
+      "c3": 79,
+      "c4": 56,
+      "c5": 77
+    },
+    {
+      "no": 28,
+      "nama": "Remaja 28",
+      "c1": 92,
+      "c2": 77,
+      "c3": 82,
+      "c4": 65,
+      "c5": 53
+    },
+    {
+      "no": 29,
+      "nama": "Remaja 29",
+      "c1": 69,
+      "c2": 58,
+      "c3": 77,
+      "c4": 71,
+      "c5": 35
+    },
+    {
+      "no": 30,
+      "nama": "Remaja 30",
+      "c1": 58,
+      "c2": 57,
+      "c3": 54,
+      "c4": 80,
+      "c5": 40
+    },
+    {
+      "no": 31,
+      "nama": "Remaja 31",
+      "c1": 98,
+      "c2": 77,
+      "c3": 83,
+      "c4": 44,
+      "c5": 54
+    },
+    {
+      "no": 32,
+      "nama": "Remaja 32",
+      "c1": 79,
+      "c2": 88,
+      "c3": 74,
+      "c4": 73,
+      "c5": 46
+    },
+    {
+      "no": 33,
+      "nama": "Remaja 33",
+      "c1": 90,
+      "c2": 50,
+      "c3": 88,
+      "c4": 86,
+      "c5": 37
+    },
+    {
+      "no": 34,
+      "nama": "Remaja 34",
+      "c1": 98,
+      "c2": 84,
+      "c3": 93,
+      "c4": 57,
+      "c5": 79
+    },
+    {
+      "no": 35,
+      "nama": "Remaja 35",
+      "c1": 96,
+      "c2": 71,
+      "c3": 52,
+      "c4": 58,
+      "c5": 57
+    },
+    {
+      "no": 36,
+      "nama": "Remaja 36",
+      "c1": 65,
+      "c2": 79,
+      "c3": 45,
+      "c4": 86,
+      "c5": 76
+    },
+    {
+      "no": 37,
+      "nama": "Remaja 37",
+      "c1": 71,
+      "c2": 82,
+      "c3": 93,
+      "c4": 51,
+      "c5": 62
+    },
+    {
+      "no": 38,
+      "nama": "Remaja 38",
+      "c1": 61,
+      "c2": 90,
+      "c3": 64,
+      "c4": 80,
+      "c5": 62
+    },
+    {
+      "no": 39,
+      "nama": "Remaja 39",
+      "c1": 93,
+      "c2": 62,
+      "c3": 54,
+      "c4": 63,
+      "c5": 78
+    },
+    {
+      "no": 40,
+      "nama": "Remaja 40",
+      "c1": 65,
+      "c2": 84,
+      "c3": 94,
+      "c4": 73,
+      "c5": 30
+    }
+  ],
+  "besson": {
+    "Remaja 3": {
+      "c1": {
+        "nilai": 98.0,
+        "besson_rank": 2.5,
+        "normalisasi": 0.0625
+      },
+      "c2": {
+        "nilai": 84.0,
+        "besson_rank": 15.0,
+        "normalisasi": 0.375
+      },
+      "c3": {
+        "nilai": 50.0,
+        "besson_rank": 34.5,
+        "normalisasi": 0.8625
+      },
+      "c4": {
+        "nilai": 77.0,
+        "besson_rank": 12.0,
+        "normalisasi": 0.3
+      },
+      "c5": {
+        "nilai": 57.0,
+        "besson_rank": 16.5,
+        "normalisasi": 0.4125
+      }
+    },
+    "Remaja 19": {
+      "c1": {
+        "nilai": 98.0,
+        "besson_rank": 2.5,
+        "normalisasi": 0.0625
+      },
+      "c2": {
+        "nilai": 91.0,
+        "besson_rank": 4.0,
+        "normalisasi": 0.1
+      },
+      "c3": {
+        "nilai": 49.0,
+        "besson_rank": 36.0,
+        "normalisasi": 0.9
+      },
+      "c4": {
+        "nilai": 78.0,
+        "besson_rank": 11.0,
+        "normalisasi": 0.275
+      },
+      "c5": {
+        "nilai": 70.0,
+        "besson_rank": 13.0,
+        "normalisasi": 0.325
+      }
+    },
+    "Remaja 31": {
+      "c1": {
+        "nilai": 98.0,
+        "besson_rank": 2.5,
+        "normalisasi": 0.0625
+      },
+      "c2": {
+        "nilai": 77.0,
+        "besson_rank": 21.5,
+        "normalisasi": 0.5375
+      },
+      "c3": {
+        "nilai": 83.0,
+        "besson_rank": 11.0,
+        "normalisasi": 0.275
+      },
+      "c4": {
+        "nilai": 44.0,
+        "besson_rank": 38.0,
+        "normalisasi": 0.95
+      },
+      "c5": {
+        "nilai": 54.0,
+        "besson_rank": 20.0,
+        "normalisasi": 0.5
+      }
+    },
+    "Remaja 34": {
+      "c1": {
+        "nilai": 98.0,
+        "besson_rank": 2.5,
+        "normalisasi": 0.0625
+      },
+      "c2": {
+        "nilai": 84.0,
+        "besson_rank": 15.0,
+        "normalisasi": 0.375
+      },
+      "c3": {
+        "nilai": 93.0,
+        "besson_rank": 3.0,
+        "normalisasi": 0.075
+      },
+      "c4": {
+        "nilai": 57.0,
+        "besson_rank": 30.5,
+        "normalisasi": 0.7625
+      },
+      "c5": {
+        "nilai": 79.0,
+        "besson_rank": 4.0,
+        "normalisasi": 0.1
+      }
+    },
+    "Remaja 6": {
+      "c1": {
+        "nilai": 96.0,
+        "besson_rank": 6.0,
+        "normalisasi": 0.15
+      },
+      "c2": {
+        "nilai": 94.0,
+        "besson_rank": 1.5,
+        "normalisasi": 0.0375
+      },
+      "c3": {
+        "nilai": 79.0,
+        "besson_rank": 13.5,
+        "normalisasi": 0.3375
+      },
+      "c4": {
+        "nilai": 66.0,
+        "besson_rank": 19.0,
+        "normalisasi": 0.475
+      },
+      "c5": {
+        "nilai": 44.0,
+        "besson_rank": 28.5,
+        "normalisasi": 0.7125
+      }
+    },
+    "Remaja 26": {
+      "c1": {
+        "nilai": 96.0,
+        "besson_rank": 6.0,
+        "normalisasi": 0.15
+      },
+      "c2": {
+        "nilai": 79.0,
+        "besson_rank": 19.5,
+        "normalisasi": 0.4875
+      },
+      "c3": {
+        "nilai": 54.0,
+        "besson_rank": 27.0,
+        "normalisasi": 0.675
+      },
+      "c4": {
+        "nilai": 56.0,
+        "besson_rank": 32.5,
+        "normalisasi": 0.8125
+      },
+      "c5": {
+        "nilai": 38.0,
+        "besson_rank": 33.0,
+        "normalisasi": 0.825
+      }
+    },
+    "Remaja 35": {
+      "c1": {
+        "nilai": 96.0,
+        "besson_rank": 6.0,
+        "normalisasi": 0.15
+      },
+      "c2": {
+        "nilai": 71.0,
+        "besson_rank": 25.0,
+        "normalisasi": 0.625
+      },
+      "c3": {
+        "nilai": 52.0,
+        "besson_rank": 30.5,
+        "normalisasi": 0.7625
+      },
+      "c4": {
+        "nilai": 58.0,
+        "besson_rank": 29.0,
+        "normalisasi": 0.725
+      },
+      "c5": {
+        "nilai": 57.0,
+        "besson_rank": 16.5,
+        "normalisasi": 0.4125
+      }
+    },
+    "Remaja 1": {
+      "c1": {
+        "nilai": 95.0,
+        "besson_rank": 8.0,
+        "normalisasi": 0.2
+      },
+      "c2": {
+        "nilai": 57.0,
+        "besson_rank": 36.5,
+        "normalisasi": 0.9125
+      },
+      "c3": {
+        "nilai": 46.0,
+        "besson_rank": 38.5,
+        "normalisasi": 0.9625
+      },
+      "c4": {
+        "nilai": 87.0,
+        "besson_rank": 2.5,
+        "normalisasi": 0.0625
+      },
+      "c5": {
+        "nilai": 47.0,
+        "besson_rank": 25.0,
+        "normalisasi": 0.625
+      }
+    },
+    "Remaja 39": {
+      "c1": {
+        "nilai": 93.0,
+        "besson_rank": 9.0,
+        "normalisasi": 0.225
+      },
+      "c2": {
+        "nilai": 62.0,
+        "besson_rank": 34.0,
+        "normalisasi": 0.85
+      },
+      "c3": {
+        "nilai": 54.0,
+        "besson_rank": 27.0,
+        "normalisasi": 0.675
+      },
+      "c4": {
+        "nilai": 63.0,
+        "besson_rank": 23.0,
+        "normalisasi": 0.575
+      },
+      "c5": {
+        "nilai": 78.0,
+        "besson_rank": 5.5,
+        "normalisasi": 0.1375
+      }
+    },
+    "Remaja 28": {
+      "c1": {
+        "nilai": 92.0,
+        "besson_rank": 10.0,
+        "normalisasi": 0.25
+      },
+      "c2": {
+        "nilai": 77.0,
+        "besson_rank": 21.5,
+        "normalisasi": 0.5375
+      },
+      "c3": {
+        "nilai": 82.0,
+        "besson_rank": 12.0,
+        "normalisasi": 0.3
+      },
+      "c4": {
+        "nilai": 65.0,
+        "besson_rank": 20.0,
+        "normalisasi": 0.5
+      },
+      "c5": {
+        "nilai": 53.0,
+        "besson_rank": 21.5,
+        "normalisasi": 0.5375
+      }
+    },
+    "Remaja 13": {
+      "c1": {
+        "nilai": 90.0,
+        "besson_rank": 12.0,
+        "normalisasi": 0.3
+      },
+      "c2": {
+        "nilai": 68.0,
+        "besson_rank": 26.0,
+        "normalisasi": 0.65
+      },
+      "c3": {
+        "nilai": 85.0,
+        "besson_rank": 10.0,
+        "normalisasi": 0.25
+      },
+      "c4": {
+        "nilai": 79.0,
+        "besson_rank": 10.0,
+        "normalisasi": 0.25
+      },
+      "c5": {
+        "nilai": 85.0,
+        "besson_rank": 1.0,
+        "normalisasi": 0.025
+      }
+    },
+    "Remaja 22": {
+      "c1": {
+        "nilai": 90.0,
+        "besson_rank": 12.0,
+        "normalisasi": 0.3
+      },
+      "c2": {
+        "nilai": 64.0,
+        "besson_rank": 28.5,
+        "normalisasi": 0.7125
+      },
+      "c3": {
+        "nilai": 88.0,
+        "besson_rank": 6.5,
+        "normalisasi": 0.1625
+      },
+      "c4": {
+        "nilai": 60.0,
+        "besson_rank": 27.5,
+        "normalisasi": 0.6875
+      },
+      "c5": {
+        "nilai": 83.0,
+        "besson_rank": 3.0,
+        "normalisasi": 0.075
+      }
+    },
+    "Remaja 33": {
+      "c1": {
+        "nilai": 90.0,
+        "besson_rank": 12.0,
+        "normalisasi": 0.3
+      },
+      "c2": {
+        "nilai": 50.0,
+        "besson_rank": 40.0,
+        "normalisasi": 1.0
+      },
+      "c3": {
+        "nilai": 88.0,
+        "besson_rank": 6.5,
+        "normalisasi": 0.1625
+      },
+      "c4": {
+        "nilai": 86.0,
+        "besson_rank": 4.5,
+        "normalisasi": 0.1125
+      },
+      "c5": {
+        "nilai": 37.0,
+        "besson_rank": 34.0,
+        "normalisasi": 0.85
+      }
+    },
+    "Remaja 5": {
+      "c1": {
+        "nilai": 87.0,
+        "besson_rank": 14.0,
+        "normalisasi": 0.35
+      },
+      "c2": {
+        "nilai": 88.0,
+        "besson_rank": 8.0,
+        "normalisasi": 0.2
+      },
+      "c3": {
+        "nilai": 46.0,
+        "besson_rank": 38.5,
+        "normalisasi": 0.9625
+      },
+      "c4": {
+        "nilai": 75.0,
+        "besson_rank": 14.0,
+        "normalisasi": 0.35
+      },
+      "c5": {
+        "nilai": 42.0,
+        "besson_rank": 30.0,
+        "normalisasi": 0.75
+      }
+    },
+    "Remaja 12": {
+      "c1": {
+        "nilai": 84.0,
+        "besson_rank": 16.0,
+        "normalisasi": 0.4
+      },
+      "c2": {
+        "nilai": 84.0,
+        "besson_rank": 15.0,
+        "normalisasi": 0.375
+      },
+      "c3": {
+        "nilai": 52.0,
+        "besson_rank": 30.5,
+        "normalisasi": 0.7625
+      },
+      "c4": {
+        "nilai": 64.0,
+        "besson_rank": 21.5,
+        "normalisasi": 0.5375
+      },
+      "c5": {
+        "nilai": 35.0,
+        "besson_rank": 37.5,
+        "normalisasi": 0.9375
+      }
+    },
+    "Remaja 17": {
+      "c1": {
+        "nilai": 84.0,
+        "besson_rank": 16.0,
+        "normalisasi": 0.4
+      },
+      "c2": {
+        "nilai": 90.0,
+        "besson_rank": 5.5,
+        "normalisasi": 0.1375
+      },
+      "c3": {
+        "nilai": 68.0,
+        "besson_rank": 18.0,
+        "normalisasi": 0.45
+      },
+      "c4": {
+        "nilai": 50.0,
+        "besson_rank": 37.0,
+        "normalisasi": 0.925
+      },
+      "c5": {
+        "nilai": 53.0,
+        "besson_rank": 21.5,
+        "normalisasi": 0.5375
+      }
+    },
+    "Remaja 21": {
+      "c1": {
+        "nilai": 84.0,
+        "besson_rank": 16.0,
+        "normalisasi": 0.4
+      },
+      "c2": {
+        "nilai": 74.0,
+        "besson_rank": 23.5,
+        "normalisasi": 0.5875
+      },
+      "c3": {
+        "nilai": 62.0,
+        "besson_rank": 20.5,
+        "normalisasi": 0.5125
+      },
+      "c4": {
+        "nilai": 80.0,
+        "besson_rank": 8.0,
+        "normalisasi": 0.2
+      },
+      "c5": {
+        "nilai": 74.0,
+        "besson_rank": 11.5,
+        "normalisasi": 0.2875
+      }
+    },
+    "Remaja 7": {
+      "c1": {
+        "nilai": 83.0,
+        "besson_rank": 18.0,
+        "normalisasi": 0.45
+      },
+      "c2": {
+        "nilai": 87.0,
+        "besson_rank": 10.0,
+        "normalisasi": 0.25
+      },
+      "c3": {
+        "nilai": 62.0,
+        "besson_rank": 20.5,
+        "normalisasi": 0.5125
+      },
+      "c4": {
+        "nilai": 40.0,
+        "besson_rank": 40.0,
+        "normalisasi": 1.0
+      },
+      "c5": {
+        "nilai": 78.0,
+        "besson_rank": 5.5,
+        "normalisasi": 0.1375
+      }
+    },
+    "Remaja 32": {
+      "c1": {
+        "nilai": 79.0,
+        "besson_rank": 19.0,
+        "normalisasi": 0.475
+      },
+      "c2": {
+        "nilai": 88.0,
+        "besson_rank": 8.0,
+        "normalisasi": 0.2
+      },
+      "c3": {
+        "nilai": 74.0,
+        "besson_rank": 16.0,
+        "normalisasi": 0.4
+      },
+      "c4": {
+        "nilai": 73.0,
+        "besson_rank": 15.5,
+        "normalisasi": 0.3875
+      },
+      "c5": {
+        "nilai": 46.0,
+        "besson_rank": 27.0,
+        "normalisasi": 0.675
+      }
+    },
+    "Remaja 14": {
+      "c1": {
+        "nilai": 78.0,
+        "besson_rank": 20.0,
+        "normalisasi": 0.5
+      },
+      "c2": {
+        "nilai": 86.0,
+        "besson_rank": 11.0,
+        "normalisasi": 0.275
+      },
+      "c3": {
+        "nilai": 57.0,
+        "besson_rank": 25.0,
+        "normalisasi": 0.625
+      },
+      "c4": {
+        "nilai": 85.0,
+        "besson_rank": 6.0,
+        "normalisasi": 0.15
+      },
+      "c5": {
+        "nilai": 34.0,
+        "besson_rank": 39.0,
+        "normalisasi": 0.975
+      }
+    },
+    "Remaja 11": {
+      "c1": {
+        "nilai": 77.0,
+        "besson_rank": 21.5,
+        "normalisasi": 0.5375
+      },
+      "c2": {
+        "nilai": 88.0,
+        "besson_rank": 8.0,
+        "normalisasi": 0.2
+      },
+      "c3": {
+        "nilai": 61.0,
+        "besson_rank": 22.0,
+        "normalisasi": 0.55
+      },
+      "c4": {
+        "nilai": 42.0,
+        "besson_rank": 39.0,
+        "normalisasi": 0.975
+      },
+      "c5": {
+        "nilai": 76.0,
+        "besson_rank": 8.5,
+        "normalisasi": 0.2125
+      }
+    },
+    "Remaja 18": {
+      "c1": {
+        "nilai": 77.0,
+        "besson_rank": 21.5,
+        "normalisasi": 0.5375
+      },
+      "c2": {
+        "nilai": 63.0,
+        "besson_rank": 32.0,
+        "normalisasi": 0.8
+      },
+      "c3": {
+        "nilai": 87.0,
+        "besson_rank": 8.0,
+        "normalisasi": 0.2
+      },
+      "c4": {
+        "nilai": 57.0,
+        "besson_rank": 30.5,
+        "normalisasi": 0.7625
+      },
+      "c5": {
+        "nilai": 74.0,
+        "besson_rank": 11.5,
+        "normalisasi": 0.2875
+      }
+    },
+    "Remaja 25": {
+      "c1": {
+        "nilai": 75.0,
+        "besson_rank": 23.0,
+        "normalisasi": 0.575
+      },
+      "c2": {
+        "nilai": 63.0,
+        "besson_rank": 32.0,
+        "normalisasi": 0.8
+      },
+      "c3": {
+        "nilai": 86.0,
+        "besson_rank": 9.0,
+        "normalisasi": 0.225
+      },
+      "c4": {
+        "nilai": 71.0,
+        "besson_rank": 17.5,
+        "normalisasi": 0.4375
+      },
+      "c5": {
+        "nilai": 55.0,
+        "besson_rank": 18.5,
+        "normalisasi": 0.4625
+      }
+    },
+    "Remaja 24": {
+      "c1": {
+        "nilai": 72.0,
+        "besson_rank": 24.0,
+        "normalisasi": 0.6
+      },
+      "c2": {
+        "nilai": 54.0,
+        "besson_rank": 38.0,
+        "normalisasi": 0.95
+      },
+      "c3": {
+        "nilai": 58.0,
+        "besson_rank": 24.0,
+        "normalisasi": 0.6
+      },
+      "c4": {
+        "nilai": 76.0,
+        "besson_rank": 13.0,
+        "normalisasi": 0.325
+      },
+      "c5": {
+        "nilai": 75.0,
+        "besson_rank": 10.0,
+        "normalisasi": 0.25
+      }
+    },
+    "Remaja 37": {
+      "c1": {
+        "nilai": 71.0,
+        "besson_rank": 25.0,
+        "normalisasi": 0.625
+      },
+      "c2": {
+        "nilai": 82.0,
+        "besson_rank": 18.0,
+        "normalisasi": 0.45
+      },
+      "c3": {
+        "nilai": 93.0,
+        "besson_rank": 3.0,
+        "normalisasi": 0.075
+      },
+      "c4": {
+        "nilai": 51.0,
+        "besson_rank": 36.0,
+        "normalisasi": 0.9
+      },
+      "c5": {
+        "nilai": 62.0,
+        "besson_rank": 14.5,
+        "normalisasi": 0.3625
+      }
+    },
+    "Remaja 2": {
+      "c1": {
+        "nilai": 70.0,
+        "besson_rank": 26.5,
+        "normalisasi": 0.6625
+      },
+      "c2": {
+        "nilai": 64.0,
+        "besson_rank": 28.5,
+        "normalisasi": 0.7125
+      },
+      "c3": {
+        "nilai": 53.0,
+        "besson_rank": 29.0,
+        "normalisasi": 0.725
+      },
+      "c4": {
+        "nilai": 87.0,
+        "besson_rank": 2.5,
+        "normalisasi": 0.0625
+      },
+      "c5": {
+        "nilai": 36.0,
+        "besson_rank": 35.5,
+        "normalisasi": 0.8875
+      }
+    },
+    "Remaja 27": {
+      "c1": {
+        "nilai": 70.0,
+        "besson_rank": 26.5,
+        "normalisasi": 0.6625
+      },
+      "c2": {
+        "nilai": 85.0,
+        "besson_rank": 12.0,
+        "normalisasi": 0.3
+      },
+      "c3": {
+        "nilai": 79.0,
+        "besson_rank": 13.5,
+        "normalisasi": 0.3375
+      },
+      "c4": {
+        "nilai": 56.0,
+        "besson_rank": 32.5,
+        "normalisasi": 0.8125
+      },
+      "c5": {
+        "nilai": 77.0,
+        "besson_rank": 7.0,
+        "normalisasi": 0.175
+      }
+    },
+    "Remaja 29": {
+      "c1": {
+        "nilai": 69.0,
+        "besson_rank": 28.0,
+        "normalisasi": 0.7
+      },
+      "c2": {
+        "nilai": 58.0,
+        "besson_rank": 35.0,
+        "normalisasi": 0.875
+      },
+      "c3": {
+        "nilai": 77.0,
+        "besson_rank": 15.0,
+        "normalisasi": 0.375
+      },
+      "c4": {
+        "nilai": 71.0,
+        "besson_rank": 17.5,
+        "normalisasi": 0.4375
+      },
+      "c5": {
+        "nilai": 35.0,
+        "besson_rank": 37.5,
+        "normalisasi": 0.9375
+      }
+    },
+    "Remaja 8": {
+      "c1": {
+        "nilai": 65.0,
+        "besson_rank": 30.5,
+        "normalisasi": 0.7625
+      },
+      "c2": {
+        "nilai": 94.0,
+        "besson_rank": 1.5,
+        "normalisasi": 0.0375
+      },
+      "c3": {
+        "nilai": 72.0,
+        "besson_rank": 17.0,
+        "normalisasi": 0.425
+      },
+      "c4": {
+        "nilai": 61.0,
+        "besson_rank": 25.5,
+        "normalisasi": 0.6375
+      },
+      "c5": {
+        "nilai": 47.0,
+        "besson_rank": 25.0,
+        "normalisasi": 0.625
+      }
+    },
+    "Remaja 20": {
+      "c1": {
+        "nilai": 65.0,
+        "besson_rank": 30.5,
+        "normalisasi": 0.7625
+      },
+      "c2": {
+        "nilai": 84.0,
+        "besson_rank": 15.0,
+        "normalisasi": 0.375
+      },
+      "c3": {
+        "nilai": 91.0,
+        "besson_rank": 5.0,
+        "normalisasi": 0.125
+      },
+      "c4": {
+        "nilai": 55.0,
+        "besson_rank": 34.0,
+        "normalisasi": 0.85
+      },
+      "c5": {
+        "nilai": 40.0,
+        "besson_rank": 31.5,
+        "normalisasi": 0.7875
+      }
+    },
+    "Remaja 36": {
+      "c1": {
+        "nilai": 65.0,
+        "besson_rank": 30.5,
+        "normalisasi": 0.7625
+      },
+      "c2": {
+        "nilai": 79.0,
+        "besson_rank": 19.5,
+        "normalisasi": 0.4875
+      },
+      "c3": {
+        "nilai": 45.0,
+        "besson_rank": 40.0,
+        "normalisasi": 1.0
+      },
+      "c4": {
+        "nilai": 86.0,
+        "besson_rank": 4.5,
+        "normalisasi": 0.1125
+      },
+      "c5": {
+        "nilai": 76.0,
+        "besson_rank": 8.5,
+        "normalisasi": 0.2125
+      }
+    },
+    "Remaja 40": {
+      "c1": {
+        "nilai": 65.0,
+        "besson_rank": 30.5,
+        "normalisasi": 0.7625
+      },
+      "c2": {
+        "nilai": 84.0,
+        "besson_rank": 15.0,
+        "normalisasi": 0.375
+      },
+      "c3": {
+        "nilai": 94.0,
+        "besson_rank": 1.0,
+        "normalisasi": 0.025
+      },
+      "c4": {
+        "nilai": 73.0,
+        "besson_rank": 15.5,
+        "normalisasi": 0.3875
+      },
+      "c5": {
+        "nilai": 30.0,
+        "besson_rank": 40.0,
+        "normalisasi": 1.0
+      }
+    },
+    "Remaja 9": {
+      "c1": {
+        "nilai": 64.0,
+        "besson_rank": 33.0,
+        "normalisasi": 0.825
+      },
+      "c2": {
+        "nilai": 63.0,
+        "besson_rank": 32.0,
+        "normalisasi": 0.8
+      },
+      "c3": {
+        "nilai": 93.0,
+        "besson_rank": 3.0,
+        "normalisasi": 0.075
+      },
+      "c4": {
+        "nilai": 61.0,
+        "besson_rank": 25.5,
+        "normalisasi": 0.6375
+      },
+      "c5": {
+        "nilai": 36.0,
+        "besson_rank": 35.5,
+        "normalisasi": 0.8875
+      }
+    },
+    "Remaja 38": {
+      "c1": {
+        "nilai": 61.0,
+        "besson_rank": 34.0,
+        "normalisasi": 0.85
+      },
+      "c2": {
+        "nilai": 90.0,
+        "besson_rank": 5.5,
+        "normalisasi": 0.1375
+      },
+      "c3": {
+        "nilai": 64.0,
+        "besson_rank": 19.0,
+        "normalisasi": 0.475
+      },
+      "c4": {
+        "nilai": 80.0,
+        "besson_rank": 8.0,
+        "normalisasi": 0.2
+      },
+      "c5": {
+        "nilai": 62.0,
+        "besson_rank": 14.5,
+        "normalisasi": 0.3625
+      }
+    },
+    "Remaja 10": {
+      "c1": {
+        "nilai": 60.0,
+        "besson_rank": 35.5,
+        "normalisasi": 0.8875
+      },
+      "c2": {
+        "nilai": 74.0,
+        "besson_rank": 23.5,
+        "normalisasi": 0.5875
+      },
+      "c3": {
+        "nilai": 51.0,
+        "besson_rank": 32.5,
+        "normalisasi": 0.8125
+      },
+      "c4": {
+        "nilai": 62.0,
+        "besson_rank": 24.0,
+        "normalisasi": 0.6
+      },
+      "c5": {
+        "nilai": 84.0,
+        "besson_rank": 2.0,
+        "normalisasi": 0.05
+      }
+    },
+    "Remaja 16": {
+      "c1": {
+        "nilai": 60.0,
+        "besson_rank": 35.5,
+        "normalisasi": 0.8875
+      },
+      "c2": {
+        "nilai": 64.0,
+        "besson_rank": 28.5,
+        "normalisasi": 0.7125
+      },
+      "c3": {
+        "nilai": 51.0,
+        "besson_rank": 32.5,
+        "normalisasi": 0.8125
+      },
+      "c4": {
+        "nilai": 64.0,
+        "besson_rank": 21.5,
+        "normalisasi": 0.5375
+      },
+      "c5": {
+        "nilai": 47.0,
+        "besson_rank": 25.0,
+        "normalisasi": 0.625
+      }
+    },
+    "Remaja 23": {
+      "c1": {
+        "nilai": 58.0,
+        "besson_rank": 37.5,
+        "normalisasi": 0.9375
+      },
+      "c2": {
+        "nilai": 64.0,
+        "besson_rank": 28.5,
+        "normalisasi": 0.7125
+      },
+      "c3": {
+        "nilai": 47.0,
+        "besson_rank": 37.0,
+        "normalisasi": 0.925
+      },
+      "c4": {
+        "nilai": 60.0,
+        "besson_rank": 27.5,
+        "normalisasi": 0.6875
+      },
+      "c5": {
+        "nilai": 55.0,
+        "besson_rank": 18.5,
+        "normalisasi": 0.4625
+      }
+    },
+    "Remaja 30": {
+      "c1": {
+        "nilai": 58.0,
+        "besson_rank": 37.5,
+        "normalisasi": 0.9375
+      },
+      "c2": {
+        "nilai": 57.0,
+        "besson_rank": 36.5,
+        "normalisasi": 0.9125
+      },
+      "c3": {
+        "nilai": 54.0,
+        "besson_rank": 27.0,
+        "normalisasi": 0.675
+      },
+      "c4": {
+        "nilai": 80.0,
+        "besson_rank": 8.0,
+        "normalisasi": 0.2
+      },
+      "c5": {
+        "nilai": 40.0,
+        "besson_rank": 31.5,
+        "normalisasi": 0.7875
+      }
+    },
+    "Remaja 4": {
+      "c1": {
+        "nilai": 57.0,
+        "besson_rank": 39.5,
+        "normalisasi": 0.9875
+      },
+      "c2": {
+        "nilai": 51.0,
+        "besson_rank": 39.0,
+        "normalisasi": 0.975
+      },
+      "c3": {
+        "nilai": 50.0,
+        "besson_rank": 34.5,
+        "normalisasi": 0.8625
+      },
+      "c4": {
+        "nilai": 53.0,
+        "besson_rank": 35.0,
+        "normalisasi": 0.875
+      },
+      "c5": {
+        "nilai": 44.0,
+        "besson_rank": 28.5,
+        "normalisasi": 0.7125
+      }
+    },
+    "Remaja 15": {
+      "c1": {
+        "nilai": 57.0,
+        "besson_rank": 39.5,
+        "normalisasi": 0.9875
+      },
+      "c2": {
+        "nilai": 92.0,
+        "besson_rank": 3.0,
+        "normalisasi": 0.075
+      },
+      "c3": {
+        "nilai": 59.0,
+        "besson_rank": 23.0,
+        "normalisasi": 0.575
+      },
+      "c4": {
+        "nilai": 89.0,
+        "besson_rank": 1.0,
+        "normalisasi": 0.025
+      },
+      "c5": {
+        "nilai": 48.0,
+        "besson_rank": 23.0,
+        "normalisasi": 0.575
+      }
+    }
+  },
+  "normalisasi": [
+    {
+      "no": 1,
+      "nama": "Remaja 1",
+      "c1": 0.2,
+      "c2": 0.9125,
+      "c3": 0.9625,
+      "c4": 0.0625,
+      "c5": 0.625
+    },
+    {
+      "no": 2,
+      "nama": "Remaja 2",
+      "c1": 0.6625,
+      "c2": 0.7125,
+      "c3": 0.725,
+      "c4": 0.0625,
+      "c5": 0.8875
+    },
+    {
+      "no": 3,
+      "nama": "Remaja 3",
+      "c1": 0.0625,
+      "c2": 0.375,
+      "c3": 0.8625,
+      "c4": 0.3,
+      "c5": 0.4125
+    },
+    {
+      "no": 4,
+      "nama": "Remaja 4",
+      "c1": 0.9875,
+      "c2": 0.975,
+      "c3": 0.8625,
+      "c4": 0.875,
+      "c5": 0.7125
+    },
+    {
+      "no": 5,
+      "nama": "Remaja 5",
+      "c1": 0.35,
+      "c2": 0.2,
+      "c3": 0.9625,
+      "c4": 0.35,
+      "c5": 0.75
+    },
+    {
+      "no": 6,
+      "nama": "Remaja 6",
+      "c1": 0.15,
+      "c2": 0.0375,
+      "c3": 0.3375,
+      "c4": 0.475,
+      "c5": 0.7125
+    },
+    {
+      "no": 7,
+      "nama": "Remaja 7",
+      "c1": 0.45,
+      "c2": 0.25,
+      "c3": 0.5125,
+      "c4": 1.0,
+      "c5": 0.1375
+    },
+    {
+      "no": 8,
+      "nama": "Remaja 8",
+      "c1": 0.7625,
+      "c2": 0.0375,
+      "c3": 0.425,
+      "c4": 0.6375,
+      "c5": 0.625
+    },
+    {
+      "no": 9,
+      "nama": "Remaja 9",
+      "c1": 0.825,
+      "c2": 0.8,
+      "c3": 0.075,
+      "c4": 0.6375,
+      "c5": 0.8875
+    },
+    {
+      "no": 10,
+      "nama": "Remaja 10",
+      "c1": 0.8875,
+      "c2": 0.5875,
+      "c3": 0.8125,
+      "c4": 0.6,
+      "c5": 0.05
+    },
+    {
+      "no": 11,
+      "nama": "Remaja 11",
+      "c1": 0.5375,
+      "c2": 0.2,
+      "c3": 0.55,
+      "c4": 0.975,
+      "c5": 0.2125
+    },
+    {
+      "no": 12,
+      "nama": "Remaja 12",
+      "c1": 0.4,
+      "c2": 0.375,
+      "c3": 0.7625,
+      "c4": 0.5375,
+      "c5": 0.9375
+    },
+    {
+      "no": 13,
+      "nama": "Remaja 13",
+      "c1": 0.3,
+      "c2": 0.65,
+      "c3": 0.25,
+      "c4": 0.25,
+      "c5": 0.025
+    },
+    {
+      "no": 14,
+      "nama": "Remaja 14",
+      "c1": 0.5,
+      "c2": 0.275,
+      "c3": 0.625,
+      "c4": 0.15,
+      "c5": 0.975
+    },
+    {
+      "no": 15,
+      "nama": "Remaja 15",
+      "c1": 0.9875,
+      "c2": 0.075,
+      "c3": 0.575,
+      "c4": 0.025,
+      "c5": 0.575
+    },
+    {
+      "no": 16,
+      "nama": "Remaja 16",
+      "c1": 0.8875,
+      "c2": 0.7125,
+      "c3": 0.8125,
+      "c4": 0.5375,
+      "c5": 0.625
+    },
+    {
+      "no": 17,
+      "nama": "Remaja 17",
+      "c1": 0.4,
+      "c2": 0.1375,
+      "c3": 0.45,
+      "c4": 0.925,
+      "c5": 0.5375
+    },
+    {
+      "no": 18,
+      "nama": "Remaja 18",
+      "c1": 0.5375,
+      "c2": 0.8,
+      "c3": 0.2,
+      "c4": 0.7625,
+      "c5": 0.2875
+    },
+    {
+      "no": 19,
+      "nama": "Remaja 19",
+      "c1": 0.0625,
+      "c2": 0.1,
+      "c3": 0.9,
+      "c4": 0.275,
+      "c5": 0.325
+    },
+    {
+      "no": 20,
+      "nama": "Remaja 20",
+      "c1": 0.7625,
+      "c2": 0.375,
+      "c3": 0.125,
+      "c4": 0.85,
+      "c5": 0.7875
+    },
+    {
+      "no": 21,
+      "nama": "Remaja 21",
+      "c1": 0.4,
+      "c2": 0.5875,
+      "c3": 0.5125,
+      "c4": 0.2,
+      "c5": 0.2875
+    },
+    {
+      "no": 22,
+      "nama": "Remaja 22",
+      "c1": 0.3,
+      "c2": 0.7125,
+      "c3": 0.1625,
+      "c4": 0.6875,
+      "c5": 0.075
+    },
+    {
+      "no": 23,
+      "nama": "Remaja 23",
+      "c1": 0.9375,
+      "c2": 0.7125,
+      "c3": 0.925,
+      "c4": 0.6875,
+      "c5": 0.4625
+    },
+    {
+      "no": 24,
+      "nama": "Remaja 24",
+      "c1": 0.6,
+      "c2": 0.95,
+      "c3": 0.6,
+      "c4": 0.325,
+      "c5": 0.25
+    },
+    {
+      "no": 25,
+      "nama": "Remaja 25",
+      "c1": 0.575,
+      "c2": 0.8,
+      "c3": 0.225,
+      "c4": 0.4375,
+      "c5": 0.4625
+    },
+    {
+      "no": 26,
+      "nama": "Remaja 26",
+      "c1": 0.15,
+      "c2": 0.4875,
+      "c3": 0.675,
+      "c4": 0.8125,
+      "c5": 0.825
+    },
+    {
+      "no": 27,
+      "nama": "Remaja 27",
+      "c1": 0.6625,
+      "c2": 0.3,
+      "c3": 0.3375,
+      "c4": 0.8125,
+      "c5": 0.175
+    },
+    {
+      "no": 28,
+      "nama": "Remaja 28",
+      "c1": 0.25,
+      "c2": 0.5375,
+      "c3": 0.3,
+      "c4": 0.5,
+      "c5": 0.5375
+    },
+    {
+      "no": 29,
+      "nama": "Remaja 29",
+      "c1": 0.7,
+      "c2": 0.875,
+      "c3": 0.375,
+      "c4": 0.4375,
+      "c5": 0.9375
+    },
+    {
+      "no": 30,
+      "nama": "Remaja 30",
+      "c1": 0.9375,
+      "c2": 0.9125,
+      "c3": 0.675,
+      "c4": 0.2,
+      "c5": 0.7875
+    },
+    {
+      "no": 31,
+      "nama": "Remaja 31",
+      "c1": 0.0625,
+      "c2": 0.5375,
+      "c3": 0.275,
+      "c4": 0.95,
+      "c5": 0.5
+    },
+    {
+      "no": 32,
+      "nama": "Remaja 32",
+      "c1": 0.475,
+      "c2": 0.2,
+      "c3": 0.4,
+      "c4": 0.3875,
+      "c5": 0.675
+    },
+    {
+      "no": 33,
+      "nama": "Remaja 33",
+      "c1": 0.3,
+      "c2": 1.0,
+      "c3": 0.1625,
+      "c4": 0.1125,
+      "c5": 0.85
+    },
+    {
+      "no": 34,
+      "nama": "Remaja 34",
+      "c1": 0.0625,
+      "c2": 0.375,
+      "c3": 0.075,
+      "c4": 0.7625,
+      "c5": 0.1
+    },
+    {
+      "no": 35,
+      "nama": "Remaja 35",
+      "c1": 0.15,
+      "c2": 0.625,
+      "c3": 0.7625,
+      "c4": 0.725,
+      "c5": 0.4125
+    },
+    {
+      "no": 36,
+      "nama": "Remaja 36",
+      "c1": 0.7625,
+      "c2": 0.4875,
+      "c3": 1.0,
+      "c4": 0.1125,
+      "c5": 0.2125
+    },
+    {
+      "no": 37,
+      "nama": "Remaja 37",
+      "c1": 0.625,
+      "c2": 0.45,
+      "c3": 0.075,
+      "c4": 0.9,
+      "c5": 0.3625
+    },
+    {
+      "no": 38,
+      "nama": "Remaja 38",
+      "c1": 0.85,
+      "c2": 0.1375,
+      "c3": 0.475,
+      "c4": 0.2,
+      "c5": 0.3625
+    },
+    {
+      "no": 39,
+      "nama": "Remaja 39",
+      "c1": 0.225,
+      "c2": 0.85,
+      "c3": 0.675,
+      "c4": 0.575,
+      "c5": 0.1375
+    },
+    {
+      "no": 40,
+      "nama": "Remaja 40",
+      "c1": 0.7625,
+      "c2": 0.375,
+      "c3": 0.025,
+      "c4": 0.3875,
+      "c5": 1.0
+    }
+  ],
+  "distance_score": [
+    {
+      "no": 1,
+      "nama": "Remaja 1",
+      "d_c1": 13.964,
+      "d_c2": 63.315,
+      "d_c3": 66.886,
+      "d_c4": 8.17,
+      "d_c5": 44.159,
+      "akumulasi": 196.494
+    },
+    {
+      "no": 2,
+      "nama": "Remaja 2",
+      "d_c1": 45.932,
+      "d_c2": 49.485,
+      "d_c3": 50.498,
+      "d_c4": 8.17,
+      "d_c5": 62.095,
+      "akumulasi": 216.18
+    },
+    {
+      "no": 3,
+      "nama": "Remaja 3",
+      "d_c1": 4.664,
+      "d_c2": 26.211,
+      "d_c3": 59.981,
+      "d_c4": 21.909,
+      "d_c5": 29.862,
+      "akumulasi": 142.627
+    },
+    {
+      "no": 4,
+      "nama": "Remaja 4",
+      "d_c1": 68.438,
+      "d_c2": 67.639,
+      "d_c3": 59.981,
+      "d_c4": 61.016,
+      "d_c5": 50.117,
+      "akumulasi": 307.191
+    },
+    {
+      "no": 5,
+      "nama": "Remaja 5",
+      "d_c1": 24.31,
+      "d_c2": 14.283,
+      "d_c3": 66.886,
+      "d_c4": 25.219,
+      "d_c5": 52.678,
+      "akumulasi": 183.376
+    },
+    {
+      "no": 6,
+      "nama": "Remaja 6",
+      "d_c1": 10.536,
+      "d_c2": 4.33,
+      "d_c3": 23.953,
+      "d_c4": 33.63,
+      "d_c5": 50.117,
+      "akumulasi": 122.566
+    },
+    {
+      "no": 7,
+      "nama": "Remaja 7",
+      "d_c1": 31.225,
+      "d_c2": 17.664,
+      "d_c3": 35.885,
+      "d_c4": 69.628,
+      "d_c5": 12.874,
+      "akumulasi": 167.276
+    },
+    {
+      "no": 8,
+      "nama": "Remaja 8",
+      "d_c1": 52.856,
+      "d_c2": 4.33,
+      "d_c3": 29.9,
+      "d_c4": 44.707,
+      "d_c5": 44.159,
+      "akumulasi": 175.952
+    },
+    {
+      "no": 9,
+      "nama": "Remaja 9",
+      "d_c1": 57.184,
+      "d_c2": 55.534,
+      "d_c3": 7.348,
+      "d_c4": 44.707,
+      "d_c5": 62.095,
+      "akumulasi": 226.868
+    },
+    {
+      "no": 10,
+      "nama": "Remaja 10",
+      "d_c1": 61.512,
+      "d_c2": 40.85,
+      "d_c3": 56.531,
+      "d_c4": 42.143,
+      "d_c5": 9.327,
+      "akumulasi": 210.363
+    },
+    {
+      "no": 11,
+      "nama": "Remaja 11",
+      "d_c1": 37.279,
+      "d_c2": 14.283,
+      "d_c3": 38.458,
+      "d_c4": 67.904,
+      "d_c5": 17.081,
+      "akumulasi": 175.005
+    },
+    {
+      "no": 12,
+      "nama": "Remaja 12",
+      "d_c1": 27.767,
+      "d_c2": 26.211,
+      "d_c3": 53.082,
+      "d_c4": 37.878,
+      "d_c5": 65.527,
+      "akumulasi": 210.465
+    },
+    {
+      "no": 13,
+      "nama": "Remaja 13",
+      "d_c1": 20.857,
+      "d_c2": 45.166,
+      "d_c3": 18.083,
+      "d_c4": 18.655,
+      "d_c5": 8.832,
+      "akumulasi": 111.593
+    },
+    {
+      "no": 14,
+      "nama": "Remaja 14",
+      "d_c1": 34.684,
+      "d_c2": 19.365,
+      "d_c3": 43.612,
+      "d_c4": 12.49,
+      "d_c5": 68.103,
+      "akumulasi": 178.254
+    },
+    {
+      "no": 15,
+      "nama": "Remaja 15",
+      "d_c1": 68.438,
+      "d_c2": 6.245,
+      "d_c3": 40.175,
+      "d_c4": 7.141,
+      "d_c5": 40.768,
+      "akumulasi": 162.767
+    },
+    {
+      "no": 16,
+      "nama": "Remaja 16",
+      "d_c1": 61.512,
+      "d_c2": 49.485,
+      "d_c3": 56.531,
+      "d_c4": 37.878,
+      "d_c5": 44.159,
+      "akumulasi": 249.565
+    },
+    {
+      "no": 17,
+      "nama": "Remaja 17",
+      "d_c1": 27.767,
+      "d_c2": 10.137,
+      "d_c3": 31.607,
+      "d_c4": 64.459,
+      "d_c5": 38.233,
+      "akumulasi": 172.203
+    },
+    {
+      "no": 18,
+      "nama": "Remaja 18",
+      "d_c1": 37.279,
+      "d_c2": 55.534,
+      "d_c3": 14.799,
+      "d_c4": 53.28,
+      "d_c5": 21.72,
+      "akumulasi": 182.612
+    },
+    {
+      "no": 19,
+      "nama": "Remaja 19",
+      "d_c1": 4.664,
+      "d_c2": 7.746,
+      "d_c3": 62.57,
+      "d_c4": 20.273,
+      "d_c5": 24.125,
+      "akumulasi": 119.378
+    },
+    {
+      "no": 20,
+      "nama": "Remaja 20",
+      "d_c1": 52.856,
+      "d_c2": 26.211,
+      "d_c3": 10.1,
+      "d_c4": 59.296,
+      "d_c5": 55.243,
+      "akumulasi": 203.706
+    },
+    {
+      "no": 21,
+      "nama": "Remaja 21",
+      "d_c1": 27.767,
+      "d_c2": 40.85,
+      "d_c3": 35.885,
+      "d_c4": 15.492,
+      "d_c5": 21.72,
+      "akumulasi": 141.714
+    },
+    {
+      "no": 22,
+      "nama": "Remaja 22",
+      "d_c1": 20.857,
+      "d_c2": 49.485,
+      "d_c3": 12.4,
+      "d_c4": 48.133,
+      "d_c5": 10.1,
+      "akumulasi": 140.975
+    },
+    {
+      "no": 23,
+      "nama": "Remaja 23",
+      "d_c1": 64.975,
+      "d_c2": 49.485,
+      "d_c3": 64.296,
+      "d_c4": 48.133,
+      "d_c5": 33.193,
+      "akumulasi": 260.082
+    },
+    {
+      "no": 24,
+      "nama": "Remaja 24",
+      "d_c1": 41.605,
+      "d_c2": 65.909,
+      "d_c3": 41.893,
+      "d_c4": 23.558,
+      "d_c5": 19.365,
+      "akumulasi": 192.33
+    },
+    {
+      "no": 25,
+      "nama": "Remaja 25",
+      "d_c1": 39.875,
+      "d_c2": 55.534,
+      "d_c3": 16.432,
+      "d_c4": 31.093,
+      "d_c5": 33.193,
+      "akumulasi": 176.127
+    },
+    {
+      "no": 26,
+      "nama": "Remaja 26",
+      "d_c1": 10.536,
+      "d_c2": 33.952,
+      "d_c3": 47.053,
+      "d_c4": 56.716,
+      "d_c5": 57.81,
+      "akumulasi": 206.067
+    },
+    {
+      "no": 27,
+      "nama": "Remaja 27",
+      "d_c1": 45.932,
+      "d_c2": 21.071,
+      "d_c3": 23.953,
+      "d_c4": 56.716,
+      "d_c5": 14.9,
+      "akumulasi": 162.572
+    },
+    {
+      "no": 28,
+      "nama": "Remaja 28",
+      "d_c1": 17.407,
+      "d_c2": 37.4,
+      "d_c3": 21.424,
+      "d_c4": 35.327,
+      "d_c5": 38.233,
+      "akumulasi": 149.791
+    },
+    {
+      "no": 29,
+      "nama": "Remaja 29",
+      "d_c1": 48.528,
+      "d_c2": 60.721,
+      "d_c3": 26.495,
+      "d_c4": 31.093,
+      "d_c5": 65.527,
+      "akumulasi": 232.364
+    },
+    {
+      "no": 30,
+      "nama": "Remaja 30",
+      "d_c1": 64.975,
+      "d_c2": 63.315,
+      "d_c3": 47.053,
+      "d_c4": 15.492,
+      "d_c5": 55.243,
+      "akumulasi": 246.078
+    },
+    {
+      "no": 31,
+      "nama": "Remaja 31",
+      "d_c1": 4.664,
+      "d_c2": 37.4,
+      "d_c3": 19.748,
+      "d_c4": 66.182,
+      "d_c5": 35.707,
+      "akumulasi": 163.701
+    },
+    {
+      "no": 32,
+      "nama": "Remaja 32",
+      "d_c1": 32.955,
+      "d_c2": 14.283,
+      "d_c3": 28.196,
+      "d_c4": 27.726,
+      "d_c5": 47.56,
+      "akumulasi": 150.72
+    },
+    {
+      "no": 33,
+      "nama": "Remaja 33",
+      "d_c1": 20.857,
+      "d_c2": 69.369,
+      "d_c3": 12.4,
+      "d_c4": 10.428,
+      "d_c5": 59.523,
+      "akumulasi": 172.577
+    },
+    {
+      "no": 34,
+      "nama": "Remaja 34",
+      "d_c1": 4.664,
+      "d_c2": 26.211,
+      "d_c3": 7.348,
+      "d_c4": 53.28,
+      "d_c5": 11.091,
+      "akumulasi": 102.594
+    },
+    {
+      "no": 35,
+      "nama": "Remaja 35",
+      "d_c1": 10.536,
+      "d_c2": 43.44,
+      "d_c3": 53.082,
+      "d_c4": 50.705,
+      "d_c5": 29.862,
+      "akumulasi": 187.625
+    },
+    {
+      "no": 36,
+      "nama": "Remaja 36",
+      "d_c1": 52.856,
+      "d_c2": 33.952,
+      "d_c3": 69.477,
+      "d_c4": 10.428,
+      "d_c5": 17.081,
+      "akumulasi": 183.794
+    },
+    {
+      "no": 37,
+      "nama": "Remaja 37",
+      "d_c1": 43.336,
+      "d_c2": 31.369,
+      "d_c3": 7.348,
+      "d_c4": 62.738,
+      "d_c5": 26.566,
+      "akumulasi": 171.357
+    },
+    {
+      "no": 38,
+      "nama": "Remaja 38",
+      "d_c1": 58.915,
+      "d_c2": 10.137,
+      "d_c3": 33.317,
+      "d_c4": 15.492,
+      "d_c5": 26.566,
+      "akumulasi": 144.427
+    },
+    {
+      "no": 39,
+      "nama": "Remaja 39",
+      "d_c1": 15.684,
+      "d_c2": 58.992,
+      "d_c3": 47.053,
+      "d_c4": 40.435,
+      "d_c5": 12.874,
+      "akumulasi": 175.038
+    },
+    {
+      "no": 40,
+      "nama": "Remaja 40",
+      "d_c1": 52.856,
+      "d_c2": 26.211,
+      "d_c3": 5.477,
+      "d_c4": 27.726,
+      "d_c5": 69.821,
+      "akumulasi": 182.091
+    }
+  ],
+  "ranking": [
+    {
+      "ranking": 1,
+      "nama": "Remaja 34",
+      "akumulasi": 102.594,
+      "keterangan": "Dampak Paling Berat"
+    },
+    {
+      "ranking": 2,
+      "nama": "Remaja 13",
+      "akumulasi": 111.593,
+      "keterangan": null
+    },
+    {
+      "ranking": 3,
+      "nama": "Remaja 19",
+      "akumulasi": 119.378,
+      "keterangan": null
+    },
+    {
+      "ranking": 4,
+      "nama": "Remaja 6",
+      "akumulasi": 122.566,
+      "keterangan": null
+    },
+    {
+      "ranking": 5,
+      "nama": "Remaja 22",
+      "akumulasi": 140.975,
+      "keterangan": null
+    },
+    {
+      "ranking": 6,
+      "nama": "Remaja 21",
+      "akumulasi": 141.714,
+      "keterangan": null
+    },
+    {
+      "ranking": 7,
+      "nama": "Remaja 3",
+      "akumulasi": 142.627,
+      "keterangan": null
+    },
+    {
+      "ranking": 8,
+      "nama": "Remaja 38",
+      "akumulasi": 144.427,
+      "keterangan": null
+    },
+    {
+      "ranking": 9,
+      "nama": "Remaja 28",
+      "akumulasi": 149.791,
+      "keterangan": null
+    },
+    {
+      "ranking": 10,
+      "nama": "Remaja 32",
+      "akumulasi": 150.72,
+      "keterangan": null
+    },
+    {
+      "ranking": 11,
+      "nama": "Remaja 27",
+      "akumulasi": 162.572,
+      "keterangan": null
+    },
+    {
+      "ranking": 12,
+      "nama": "Remaja 15",
+      "akumulasi": 162.767,
+      "keterangan": null
+    },
+    {
+      "ranking": 13,
+      "nama": "Remaja 31",
+      "akumulasi": 163.701,
+      "keterangan": null
+    },
+    {
+      "ranking": 14,
+      "nama": "Remaja 7",
+      "akumulasi": 167.276,
+      "keterangan": null
+    },
+    {
+      "ranking": 15,
+      "nama": "Remaja 37",
+      "akumulasi": 171.357,
+      "keterangan": null
+    },
+    {
+      "ranking": 16,
+      "nama": "Remaja 17",
+      "akumulasi": 172.203,
+      "keterangan": null
+    },
+    {
+      "ranking": 17,
+      "nama": "Remaja 33",
+      "akumulasi": 172.577,
+      "keterangan": null
+    },
+    {
+      "ranking": 18,
+      "nama": "Remaja 11",
+      "akumulasi": 175.005,
+      "keterangan": null
+    },
+    {
+      "ranking": 19,
+      "nama": "Remaja 39",
+      "akumulasi": 175.038,
+      "keterangan": null
+    },
+    {
+      "ranking": 20,
+      "nama": "Remaja 8",
+      "akumulasi": 175.952,
+      "keterangan": null
+    },
+    {
+      "ranking": 21,
+      "nama": "Remaja 25",
+      "akumulasi": 176.127,
+      "keterangan": null
+    },
+    {
+      "ranking": 22,
+      "nama": "Remaja 14",
+      "akumulasi": 178.254,
+      "keterangan": null
+    },
+    {
+      "ranking": 23,
+      "nama": "Remaja 40",
+      "akumulasi": 182.091,
+      "keterangan": null
+    },
+    {
+      "ranking": 24,
+      "nama": "Remaja 18",
+      "akumulasi": 182.612,
+      "keterangan": null
+    },
+    {
+      "ranking": 25,
+      "nama": "Remaja 5",
+      "akumulasi": 183.376,
+      "keterangan": null
+    },
+    {
+      "ranking": 26,
+      "nama": "Remaja 36",
+      "akumulasi": 183.794,
+      "keterangan": null
+    },
+    {
+      "ranking": 27,
+      "nama": "Remaja 35",
+      "akumulasi": 187.625,
+      "keterangan": null
+    },
+    {
+      "ranking": 28,
+      "nama": "Remaja 24",
+      "akumulasi": 192.33,
+      "keterangan": null
+    },
+    {
+      "ranking": 29,
+      "nama": "Remaja 1",
+      "akumulasi": 196.494,
+      "keterangan": null
+    },
+    {
+      "ranking": 30,
+      "nama": "Remaja 20",
+      "akumulasi": 203.706,
+      "keterangan": null
+    },
+    {
+      "ranking": 31,
+      "nama": "Remaja 26",
+      "akumulasi": 206.067,
+      "keterangan": null
+    },
+    {
+      "ranking": 32,
+      "nama": "Remaja 10",
+      "akumulasi": 210.363,
+      "keterangan": null
+    },
+    {
+      "ranking": 33,
+      "nama": "Remaja 12",
+      "akumulasi": 210.465,
+      "keterangan": null
+    },
+    {
+      "ranking": 34,
+      "nama": "Remaja 2",
+      "akumulasi": 216.18,
+      "keterangan": null
+    },
+    {
+      "ranking": 35,
+      "nama": "Remaja 9",
+      "akumulasi": 226.868,
+      "keterangan": null
+    },
+    {
+      "ranking": 36,
+      "nama": "Remaja 29",
+      "akumulasi": 232.364,
+      "keterangan": null
+    },
+    {
+      "ranking": 37,
+      "nama": "Remaja 30",
+      "akumulasi": 246.078,
+      "keterangan": null
+    },
+    {
+      "ranking": 38,
+      "nama": "Remaja 16",
+      "akumulasi": 249.565,
+      "keterangan": null
+    },
+    {
+      "ranking": 39,
+      "nama": "Remaja 23",
+      "akumulasi": 260.082,
+      "keterangan": null
+    },
+    {
+      "ranking": 40,
+      "nama": "Remaja 4",
+      "akumulasi": 307.191,
+      "keterangan": "Dampak Paling Ringan"
+    }
+  ]
+}
