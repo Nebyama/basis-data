@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ORESTE GitHub Pages</title>
+  <meta name="description" content="Versi statis ORESTE yang dapat diakses dari GitHub Pages, tanpa PHP atau database." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero-shell">
+    <nav class="topbar container">
+      <a class="brand" href="#top">ORESTE Static</a>
+      <div class="topbar-links">
+        <a href="#fitur">Fitur</a>
+        <a href="#input">Tambah Data</a>
+        <a href="#hasil">Hasil</a>
+      </div>
+    </nav>
+
+    <section class="hero container" id="top">
+      <div>
+        <p class="eyebrow">GitHub Pages • HTML • JavaScript</p>
+        <h1>Versi ORESTE yang bisa dipakai oleh semua orang</h1>
+        <p class="lede">Aplikasi ini sudah diubah dari PHP menjadi situs statis. Anda bisa langsung commit, push, lalu aktifkan GitHub Pages dari branch main/root tanpa server backend.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#input">Coba tambah data</a>
+          <a class="btn btn-secondary" href="#hasil">Lihat hasil otomatis</a>
+        </div>
+      </div>
+      <aside class="hero-card card">
+        <h2>Keunggulan versi baru</h2>
+        <ul>
+          <li>Tidak perlu PHP, MySQL, atau XAMPP.</li>
+          <li>Siap dipublish di GitHub Pages.</li>
+          <li>Input data baru langsung dihitung otomatis.</li>
+          <li>Mudah di-commit ke GitHub.</li>
+        </ul>
+      </aside>
+    </section>
+  </header>
+
+  <main class="container stack">
+    <section id="fitur" class="grid feature-grid">
+      <article class="card">
+        <h3>1. Tanpa backend</h3>
+        <p>Semua halaman dibuat dengan HTML, CSS, dan JavaScript murni, sehingga aman untuk GitHub Pages.</p>
+      </article>
+      <article class="card">
+        <h3>2. Perhitungan otomatis</h3>
+        <p>Setiap data baru langsung dihitung menggunakan rumus ORESTE yang sudah ada pada versi PHP.</p>
+      </article>
+      <article class="card">
+        <h3>3. Mudah dikembangkan</h3>
+        <p>Anda bisa menambahkan tampilan, chart, atau export data nanti tanpa mengganti arsitektur.</p>
+      </article>
+    </section>
+
+    <section class="grid two-col">
+      <article class="card" id="input">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Input data</p>
+            <h2>Tambah alternatif baru</h2>
+          </div>
+          <button id="resetBtn" class="btn btn-secondary small">Reset data demo</button>
+        </div>
+        <p>Masukkan nama remaja dan nilai C1–C5. Setelah submit, sistem akan menghitung ranking dan nilai otomatis.</p>
+
+        <form id="addForm" class="form-grid">
+          <label>Nama Alternatif
+            <input id="nama" name="nama" type="text" placeholder="Contoh: Remaja 41" required />
+          </label>
+          <label>C1 - Durasi Penggunaan Internet
+            <input id="c1" name="c1" type="number" min="0" max="100" required />
+          </label>
+          <label>C2 - Kondisi Mental
+            <input id="c2" name="c2" type="number" min="0" max="100" required />
+          </label>
+          <label>C3 - Kualitas Tidur
+            <input id="c3" name="c3" type="number" min="0" max="100" required />
+          </label>
+          <label>C4 - Interaksi Sosial
+            <input id="c4" name="c4" type="number" min="0" max="100" required />
+          </label>
+          <label>C5 - Kesadaran Diri
+            <input id="c5" name="c5" type="number" min="0" max="100" required />
+          </label>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Hitung otomatis</button>
+            <button class="btn btn-secondary" type="button" id="sampleBtn">Isi contoh data</button>
+          </div>
+        </form>
+        <p id="statusMessage" class="status-box" aria-live="polite"></p>
+      </article>
+
+      <article class="card summary-card">
+        <p class="eyebrow">Ringkasan data</p>
+        <h2 id="summaryTitle">Menunggu data...</h2>
+        <div id="summaryStats" class="mini-stats"></div>
+        <p id="summaryText" class="muted"></p>
+      </article>
+    </section>
+
+    <section class="card" id="hasil">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Hasil otomatis</p>
+          <h2>Ranking ORESTE</h2>
+        </div>
+        <span class="pill">Dihitung dari nilai C1–C5</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Alternatif</th>
+              <th>Akumulasi</th>
+              <th>C1</th>
+              <th>C2</th>
+              <th>C3</th>
+              <th>C4</th>
+              <th>C5</th>
+            </tr>
+          </thead>
+          <tbody id="rankingTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <p class="eyebrow">Catatan</p>
+      <h2>Bagaimana cara publish ke GitHub Pages</h2>
+      <ol class="steps">
+        <li>Commit semua file yang ada di folder ini ke repository Anda.</li>
+        <li>Buka Settings → Pages pada GitHub.</li>
+        <li>Pilih branch <strong>main</strong> atau <strong>master</strong>, folder <strong>/root</strong>.</li>
+        <li>Simpan, lalu tunggu deploy selesai.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>ORESTE Static • Siap dipakai untuk GitHub Pages.</p>
+      <p>Versi ini dibuat untuk memudahkan publikasi dan demo.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

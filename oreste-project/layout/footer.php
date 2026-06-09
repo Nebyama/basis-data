@@ -1,0 +1,8 @@
+</main>
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>ORESTE Research &copy; <?= date('Y') ?>. Judika Ariansyah Sirait 240202008.</p>
+    </div>
+</footer>
+</body>
+</html>
