@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alternatif ORESTE</title>
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+<body>
+  <header class="hero-shell">
+    <nav class="topbar container">
+      <a class="brand" href="../index.html">ORESTE Static</a>
+      <div class="topbar-links"><a href="../dashboard.html">Dashboard</a><a href="alternatif.html">Alternatif</a></div>
+    </nav>
+  </header>
+  <main class="container stack">
+    <section class="grid two-col">
+      <article class="card">
+        <p class="eyebrow">CRUD statis</p>
+        <h2>Tambah dan hapus data alternatif</h2>
+        <p class="lede">Fitur tambah dan hapus sudah disediakan dalam versi HTML. Setelah data masuk, ranking akan dihitung ulang otomatis.</p>
+        <form id="addForm" class="form-grid">
+          <label>Nama Alternatif<input id="nama" type="text" placeholder="Contoh: Remaja 42" required /></label>
+          <label>C1<input id="c1" type="number" min="0" max="100" required /></label>
+          <label>C2<input id="c2" type="number" min="0" max="100" required /></label>
+          <label>C3<input id="c3" type="number" min="0" max="100" required /></label>
+          <label>C4<input id="c4" type="number" min="0" max="100" required /></label>
+          <label>C5<input id="c5" type="number" min="0" max="100" required /></label>
+          <div class="form-actions"><button class="btn btn-primary" type="submit">Tambah data</button><button class="btn btn-secondary" type="button" id="sampleBtn">Isi contoh</button></div>
+        </form>
+        <p id="statusMessage" class="status-box" aria-live="polite"></p>
+      </article>
+      <article class="card">
+        <p class="eyebrow">Data saat ini</p>
+        <h2 id="summaryTitle">Daftar alternatif</h2>
+        <ul id="alternatifList" class="steps"></ul>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="section-heading"><div><p class="eyebrow">Hasil otomatis</p><h2>Ranking ORESTE</h2></div><span class="pill">Update dari localStorage</span></div>
+      <div class="table-wrap"><table><thead><tr><th>Rank</th><th>Alternatif</th><th>Akumulasi</th><th>C1</th><th>C2</th><th>C3</th><th>C4</th><th>C5</th></tr></thead><tbody id="rankingTableBody"></tbody></table></div>
+    </section>
+  </main>
+  <script src="../static-app.js"></script>
+</body>
+</html>

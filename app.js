@@ -4,6 +4,8 @@ const state = {
   original: [],
   criteria: [],
   alternatives: [],
+  results: [],
+  currentMode: 'ranking-low',
 };
 
 function formatNumber(value) {
@@ -77,8 +79,42 @@ function renderSummary(data) {
     : 'Belum ada data. Tambahkan alternatif untuk melihat hasil otomatis.';
 }
 
-function renderRankingTable(results) {
-  const body = document.getElementById('rankingTableBody');
+function sortResults(results, mode = state.currentMode) {
+  const items = [...results];
+
+  switch (mode) {
+    case 'ranking-high':
+      return items.sort((a, b) => b.ranking - a.ranking);
+    case 'c1-low':
+      return items.sort((a, b) => Number(a.raw.c1) - Number(b.raw.c1) || a.ranking - b.ranking);
+    case 'c1-high':
+      return items.sort((a, b) => Number(b.raw.c1) - Number(a.raw.c1) || a.ranking - b.ranking);
+    case 'c2-low':
+      return items.sort((a, b) => Number(a.raw.c2) - Number(b.raw.c2) || a.ranking - b.ranking);
+    case 'c2-high':
+      return items.sort((a, b) => Number(b.raw.c2) - Number(a.raw.c2) || a.ranking - b.ranking);
+    case 'c3-low':
+      return items.sort((a, b) => Number(a.raw.c3) - Number(b.raw.c3) || a.ranking - b.ranking);
+    case 'c3-high':
+      return items.sort((a, b) => Number(b.raw.c3) - Number(a.raw.c3) || a.ranking - b.ranking);
+    case 'c4-low':
+      return items.sort((a, b) => Number(a.raw.c4) - Number(b.raw.c4) || a.ranking - b.ranking);
+    case 'c4-high':
+      return items.sort((a, b) => Number(b.raw.c4) - Number(a.raw.c4) || a.ranking - b.ranking);
+    case 'c5-low':
+      return items.sort((a, b) => Number(a.raw.c5) - Number(b.raw.c5) || a.ranking - b.ranking);
+    case 'c5-high':
+      return items.sort((a, b) => Number(b.raw.c5) - Number(a.raw.c5) || a.ranking - b.ranking);
+    case 'ranking-low':
+    default:
+      return items.sort((a, b) => a.ranking - b.ranking);
+  }
+}
+
+function renderRankingTable(results, targetId = 'rankingTableBody') {
+  const body = document.getElementById(targetId);
+  if (!body) return;
+
   if (!results.length) {
     body.innerHTML = '<tr><td colspan="8" class="muted">Belum ada data.</td></tr>';
     return;
@@ -98,6 +134,21 @@ function renderRankingTable(results) {
         <td>${values.c5}</td>
       </tr>`;
   }).join('');
+}
+
+function refreshRankingViews(results) {
+  const dashboardFilter = document.getElementById('dashboardFilter');
+  const homeFilter = document.getElementById('rankingFilter');
+
+  if (dashboardFilter) {
+    const mode = dashboardFilter.value;
+    renderRankingTable(sortResults(results, mode), 'rankingTableBody');
+  }
+
+  if (homeFilter) {
+    const mode = homeFilter.value;
+    renderRankingTable(sortResults(results, mode), 'homeRankingTableBody');
+  }
 }
 
 function showStatus(message, type = 'success') {
@@ -153,9 +204,11 @@ async function loadData() {
       showStatus('Data tambahan berhasil dimuat dari browser Anda.', 'success');
     }
 
-    const results = buildRanking(state.alternatives, criteria);
+    state.results = buildRanking(state.alternatives, criteria);
+    const results = state.results;
+
     renderSummary({ alternatives: state.alternatives, criteria, results });
-    renderRankingTable(results);
+    refreshRankingViews(results);
   } catch (error) {
     console.error(error);
     showStatus('Tidak dapat memuat data ORESTE. Pastikan file orest_data.json ada di repositori.', 'error');
@@ -186,8 +239,11 @@ function addAlternative(event) {
   state.alternatives = nextAlternatives;
 
   const results = buildRanking(nextAlternatives, state.criteria);
+  state.results = results;
+
   renderSummary({ alternatives: nextAlternatives, criteria: state.criteria, results });
-  renderRankingTable(results);
+  refreshRankingViews(results);
+
   showStatus(`Data ${nama} berhasil ditambahkan. Sistem menghitung ulang secara otomatis.`, 'success');
   form.reset();
 }
@@ -205,14 +261,43 @@ function resetDemo() {
   localStorage.removeItem(STORAGE_KEY);
   state.alternatives = state.original;
   const results = buildRanking(state.alternatives, state.criteria);
+  state.results = results;
+
   renderSummary({ alternatives: state.alternatives, criteria: state.criteria, results });
-  renderRankingTable(results);
+  refreshRankingViews(results);
+
   showStatus('Data demo berhasil dikembalikan ke data awal.', 'success');
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('addForm').addEventListener('submit', addAlternative);
-  document.getElementById('sampleBtn').addEventListener('click', fillSampleData);
-  document.getElementById('resetBtn').addEventListener('click', resetDemo);
+  const addForm = document.getElementById('addForm');
+  if (addForm) addForm.addEventListener('submit', addAlternative);
+
+  const sampleBtn = document.getElementById('sampleBtn');
+  if (sampleBtn) sampleBtn.addEventListener('click', fillSampleData);
+
+  const resetBtn = document.getElementById('resetBtn');
+  if (resetBtn) resetBtn.addEventListener('click', resetDemo);
+
+  const dashboardFilter = document.getElementById('dashboardFilter');
+  if (dashboardFilter) {
+    dashboardFilter.addEventListener('change', (event) => {
+      state.currentMode = event.target.value;
+      if (state.results.length) {
+        renderRankingTable(sortResults(state.results, state.currentMode), 'rankingTableBody');
+      }
+    });
+  }
+
+  const filter = document.getElementById('rankingFilter');
+  if (filter) {
+    filter.addEventListener('change', (event) => {
+      state.currentMode = event.target.value;
+      if (state.results.length) {
+        renderRankingTable(sortResults(state.results, state.currentMode), 'homeRankingTableBody');
+      }
+    });
+  }
+
   loadData();
 });
